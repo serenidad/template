@@ -1,0 +1,21 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the home page.
+// -----------------------------------------------------------------------------
+
+body {
+	background: $brand-color;
+}
+
+.outer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100vw;
+	height: 100vh;
+}
+
+.inner {
+	width: 100%;
+  	max-width: $max-width;
+  	padding: 0 2em;
+}

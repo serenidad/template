@@ -1,0 +1,17 @@
+{
+  "name": "serenidad",
+  "version": "1.0.0",
+  "authors": [
+    "Timm Schroeder <info@bueroschroeder.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+  }
+}
