@@ -2,20 +2,47 @@
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
 
-body {
-	background: $brand-color;
-}
-
-.outer {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 100vw;
-	height: 100vh;
-}
-
-.inner {
+.container {
 	width: 100%;
   	max-width: $max-width;
+  	margin: 0 auto;
   	padding: 0 2em;
+}
+
+.home__teaser {
+	display: flex;
+	flex-flow: column;
+
+	@include respond-to('medium') {
+    	flex-flow: row;
+  }
+}
+
+.home_teaser__rtl {
+	display: flex;
+	flex-flow: column;
+
+	@include respond-to('medium') {
+    	flex-flow: row-reverse;
+  }
+}
+
+.home__teaser__img {
+	flex: 0 1 auto;
+	width: 100%;
+
+	@include respond-to('medium') {
+    	width: 55%;
+  }
+
+}
+
+.home__teaser__text {
+	flex: 0 1 auto;
+	width: 100%;
+	background: red;
+
+	@include respond-to('medium') {
+    	width: 45%;
+  }
 }

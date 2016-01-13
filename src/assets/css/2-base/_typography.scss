@@ -1,3 +1,60 @@
-/**
- * Basic typography style for copy text
- */
+// -----------------------------------------------------------------------------
+// Basic typography style for copy text
+// -----------------------------------------------------------------------------
+
+
+/// Body und Head Fonts
+
+body {
+  color: $text-color;
+  font-family: $text-font-stack;
+  font-weight: $text-font-weight;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $head-font-stack;
+  font-weight: $head-font-weight;
+  margin: 0;
+  text-rendering: optimizeLegibility; // Fix the character spacing for headings
+}
+
+h1 {
+    color: $brand-color;
+}
+
+h2 {
+    color: $brand-color;
+}
+
+h3 {
+  
+}
+
+h4 {
+  
+}
+
+h5 {
+  
+}
+
+h6 {
+  
+}
+
+p {
+  
+}
+
+
+/// Text Links
+
+a {
+  color: $brand-color;
+  text-decoration: none;
+
+  @include on-event {
+    color: $text-color;
+    text-decoration: underline;
+  }
+}

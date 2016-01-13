@@ -1,3 +1,30 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
+
+header {
+	display: flex;
+	justify-content: space-between;
+	padding: 2rem;
+}
+
+.logo {
+	flex: 0 1 auto;
+	width: 20rem;
+}
+
+nav {
+	flex: 0 1 auto;
+}
+
+nav ul li {
+	display: inline;
+}
+
+.pinterest {
+	width: 1rem;
+}
+
+.instagram {
+	width: 1rem;
+}

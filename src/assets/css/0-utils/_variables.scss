@@ -4,38 +4,41 @@
 
 
 
+/// Root document size. Base for rems
+$root-size: 16px;
+
+
 
 
 /// Regular font family
-/// @type List
-$text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+$text-font-stack: 'acumin-pro', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
 
-/// Code (monospace) font family
-/// @type List
-$code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
+/// Head font family
+$head-font-stack: 'acumin-pro-wide', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
 
+
+
+
+/// Font weight
+$text-font-weight: 400;
+$head-font-weight: 300;
 
 
 
 
 /// Copy text color
-/// @type Color
 $text-color: #1c212e !default;
 
 /// Main brand color - Gold
-/// @type Color
 $brand-color: #d3ae29 !default;
 
 /// Light grey
-/// @type Color
 $light-grey: #f2ede5 !default;
 
 /// Medium grey
-/// @type Color
 $mid-grey: #cecac3 !default;
 
 /// Dark grey
-/// @type Color
 $dark-grey: #5e6a72 !default;
 
 
@@ -44,8 +47,7 @@ $dark-grey: #5e6a72 !default;
 
 /// Container's maximum width
 /// Below that is 100%
-/// @type Length
-$max-width: 900px !default;
+$max-width: 75rem !default;
 
 
 
@@ -56,9 +58,9 @@ $max-width: 900px !default;
 /// @prop {Map} values - Values are actual breakpoints expressed in pixels
 /// @see {mixin} respond-to
 $breakpoints: (
-  'small': (min-width: 320px),
-  'medium': (min-width: 768px),
-  'large': (min-width: 1024px),
+  'small': (min-width: 20rem),
+  'medium': (min-width: 48rem),
+  'large': (min-width: 64rem),
 ) !default;
 
 
