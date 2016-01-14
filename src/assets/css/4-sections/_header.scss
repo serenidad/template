@@ -2,29 +2,60 @@
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
 
-header {
-	display: flex;
-	justify-content: space-between;
-	padding: 2rem;
+.wrapper {
+	position: fixed;
+	width: 100%;
 }
 
-.logo {
+header {
+	display: flex;
+	align-items: center;
+	padding: 2em;	
+	width: 100%;
+	transition: all 0.4s ease;
+}
+
+header.sticky {
+	padding: 1rem;
+	background: rgba(255, 255, 255, .9);
+
+}
+
+.large__logo {
 	flex: 0 1 auto;
-	width: 20rem;
+	width: 2rem;
+	margin: 0 1em 0 0;
+}
+
+.small__logo {
+	flex: 0 1 auto;
+	width: 12rem;
+	display: none;
+}
+
+header.sticky .large__logo, header.sticky .slogan {
+	display: none;
+}
+
+header.sticky .small__logo {
+	display: inline;
+}
+
+.slogan {
+	flex: 0 1 auto;
+	color: $dark-grey;
 }
 
 nav {
 	flex: 0 1 auto;
+	margin-left: auto;
 }
 
 nav ul li {
 	display: inline;
 }
 
-.pinterest {
+.pinterest, .instagram {
 	width: 1rem;
-}
-
-.instagram {
-	width: 1rem;
+	margin: 0 0 0 1em;
 }
